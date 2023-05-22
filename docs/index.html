@@ -1,0 +1,182 @@
+<!--?php @session_start();
+get_includes('head');
+get_includes('header');
+get_includes('nav');
+get_includes('banner');
+?-->
+<!--?php if ( is_front_page() ) { get_includes('middle'); }?-->
+<!DOCTYPE html>
+<!--[if lt IE 10]>      <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 10]>         <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 11]>         <html class="no-js lt-ie11"> <![endif]-->
+<!--[if gt IE 11]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+	<!-- <title><?php //echo get_bloginfo('name');?>CompanyName</title> -->
+    <title>Kema Health Services</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/media.min.css">
+	<link rel="stylesheet" href="css/rslides.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/skitter.styles.min.css" type="text/css" media="all"  />
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<!--?php wp_head(); ?-->
+</head>
+<body>
+<!-- Header -->
+	<header>
+        <div class="wrapper">
+	<div class="head_info">
+				<div class="header_info">
+					<h2>Phone number:<span><mark>123-456-7890</mark></span></h2>
+				</div>
+                <div class="header_con">
+                    <div class="main_logo">
+                      <!-- <a href="//<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a> -->
+                       <a href="//<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>                    
+                    </div>
+                    <div class="contact_info">
+                       <span>Email Address: <mark><a href="mailtonniyomugabo@yahoo.com">infosample@gmail.com</a></mark></span></div>
+                       </div>
+</header>
+<!-- Banner -->
+
+<div id="banner">
+    <figure><img src="images/banner-img.jpg" alt="a man whos love remain unfinish"/></figure>
+	<div class="wrapper">
+		<div class="bnr_con">
+            <div class="bnr_info">
+				<h2>Unravel Your Best Self Without <span>Going Far From Your Home</span></h2>
+				<p>Discover how our behavioral telehealth services allow your recovery to happen anywhere</p>
+				
+			</div>
+            </div>
+            </div>
+            </div>
+           
+
+</banner>
+	<!-- Middle -->
+<div id="middle">
+    <div class="middle_con">
+        <h2>Let our helping hand<span>guide you to healing.</span></h2>
+        <figure><img src="images/middle-img.png" alt="a man whos love remain unfinish"/></figure>
+        
+    </div>
+	<div class="wrapper">
+
+	
+		<div class="main_con2">
+		<div class="middle_form">		
+
+            <h2>Your Recovery<span>Journey Starts Here:</span></h2>
+            
+            <section class="middle_form_slide-right">
+			
+				<!-- <?php dynamic_sidebar('btm4_form'); ?> -->
+				</section>
+				<!-- <?php echo $prompt_message; ?> -->
+				<form method="post"  class="middle_form_slide-right" id="submit_formmessage" action="#bottom4">
+					<div id="invalid-msg"></div>
+
+                    <label for="author">Full Name *<span class="required"></span></label>
+                    <input type="text" class="form_fullname" name="Full_Name" value="" placeholder="" required></label>
+
+                    <label for="author">Address *<span class="required"></span></label>
+                    <input type="email" class="form_email" name="Address" value="" placeholder="" required>
+                   
+                    <label for="author">Email Address *<span class="required"></span></label>
+       				<input type="email" class="form_email" name="Email_Address" value="" placeholder="" required>
+
+                    <label for="author">Phone Number *<span class="required"></span></label>
+                    <input type="tel" name="Phone_Number" placeholder="" required>
+
+
+                    <label for="author">Choose Date*<span class="required"></span></label>
+                    <input type="date" name="Date" required>
+
+                    <label for="author">Choose Time*<span class="required"></span></label>
+                    <input type="time" name="Time" required>
+          
+
+
+       			
+					<div class="captcha-box"><div class="g-recaptcha" data-sitekey="<?php echo $recaptcha_sitekey; ?>"></div></div>
+					<input class="form_btn" type="submit" name="submit_info" value="Submit">
+				</form>     
+				</div>
+	
+		<div class="sidebar">
+			<h1>Why <span>Choose Us?</span></h1>
+
+			<p>We’re here to redefine how you embrace your mental well-being. Trust us with your journey and unlock a world of cutting-edge behavioral telehealth care tailored just for you! Our innovative blend of advanced technology and compassionate support ensures an experience that’s seamless and extraordinary. Plus, we’re breaking down barriers by accepting insurance, so your focus stays on your healing—not your finances. Your mental health deserves the best, and that’s why we’re the ones to trust. The future of behavioral healthcare starts here at Kema Health Services!
+			</p>
+		</div>
+		</div>
+	</div>
+</div>
+<!-- End Middle -->
+
+<!-- Main -->
+<div id="main_area">
+	<div class="wrapper">
+		<div class="main_con">
+			<h2 class="h2_title">Our Available Services</h2>
+			<div class="main_boxes">
+			<section class="main_box1">
+				<h2>Motivation/Supportive Therapy</h2>
+				<p>Let our expert guidance and unwavering support fuel your journey to greatness as you undergo our motivational therapy sessions.
+				</p>				
+			</section>
+
+			<section class="main_box2">
+				<h2>In-Person/Telehealth Psychiatric Care </h2>
+				<p>Whether in-person or through our cutting-edge telehealth platform, our renowned psychiatrists are here to guide you toward mental wellness. </p>				
+			</section>
+
+			<section class="main_box3">
+				<h2>Medication Management </h2>
+				<p>Our skilled team ensures your treatment is fine-tuned to perfection, allowing you to harness the benefits of adhering to your medication. </p>				
+			</section>
+
+			<section class="main_box4">
+				<h2>Medical Marijuana </h2>
+				<p>Discover the natural path to relief through our medical marijuana program, where we can assess your eligibility to heal with medical marijuana. </p>				
+			</section>
+
+
+
+
+		</div>
+		</div>		
+	</div>
+</div>
+<!-- End Main -->
+
+<!-- Bottom -->
+<div id="bottom1">
+	<div class="wrapper">
+		<div class="btm1_con">
+			
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!-- End  Bottom -->
+
+
+  <!--?php wp_footer(); ?-->
+  </body>
+</html>
